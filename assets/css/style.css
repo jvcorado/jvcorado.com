@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+	vertical-align: baseline;
+    
+}
+title{
+    font-family: 'Cormorant Garamond', serif;
+}
+body{
+    font-family: "Open Sans", "sans-serif";
+    background-color: #1D232A;
+    color: white;
+}
+.title-cabecalho{
+    font-family: 'Comforter', cursive;
+    font-size: 1.6em;
+}
+.title-menu{
+    font-family: 'Comforter', cursive; 
+    font-size: 1.6em;
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #15191C;
+    padding: 8px 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    color: rgb(255, 255, 255);
+    
+}
+.cabecalhoMenu{
+    background-color: transparent;
+    border: none;
+}
+.cabecalhoMenu i::before{
+    font-family: 'icones';
+    content: "\e904";
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    font-style: normal;
+}
+.cabecalhoNotificacao{
+    border: none;
+    background-color: transparent;
+}
+.cabecalhoNotificacao i::before{
+    content: "\e906";
+    font-size: 24px;
+    color: #15191C;
+}
+
+.menu-lateral{
+    display: flex;
+    flex-direction: column;
+    background-color: #15191C;
+    width: 75vw;
+    height: 100vh;
+    cursor: pointer;
+    position: absolute;
+    left: -100vw;
+    transition: left .25s;
+    z-index: 99;
+}
+.menu-lateral--ativo{
+    position: absolute;
+    left: 0;
+    transition: left .25s;
+}
+.menu-lateral-logo{
+    width: 118px;
+    align-self: center;
+    padding: 16px;
+}
+.menu-lateral-link{
+    height: 64px;
+    color: #95999C;
+    padding-left: 34px;
+    display: flex;
+    align-items: center;
+
+}
+
+.menu-lateral-link--ativo{
+    color: white;
+    padding-left: 24px;
+    border-left: 8px solid white;
+}
+.menu-lateral-link::before{
+   
+}
+.menu-lateral-inicio::before{
+
+}
+.menu-lateral-sobre::before{
+  
+}
+.menu-lateral-habilidades::before{
+ 
+}
+.menu-lateral-projetos::before{
+
+}
+.menu-lateral-certificados::before{
+    
+}
+.menu-lateral-contato::before{
+  
+}
+.menu-lateral-pinturas::before{
+   
+}
+.principal{
+    padding: 24px 16px;
+    display: grid;
+    gap: 16px;
+}
+.titulo-pagina{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.titulo-sessao{
+    font-size: 1.2rem;
+    font-weight: 700;
+    gap: 16px;
+}
+.cartao{
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #2C343A;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    padding-left: 5px;
+    text-align: start;
+}
+.cartao-column{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+.cartao-img{
+    width: 128px;
+    display: flex;
+    align-self: center;
+
+}
+.cartao--destaque{
+    margin-bottom: 16px;
+
+}
+.cartao-destaque{
+    grid-column: span 2;
+}
+.cartao-conteudo{
+    padding: 16px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 8px;
+}
+.cartao-conteudo img{
+    padding-right: 10px;
+}
+.cartao-titulo{
+    grid-column: span 2;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+a {
+    color: white;
+}
+a:hover{
+    color: white;
+}
+.cartao-perfil{
+    grid-column: span 2;
+    color: #95999C;
+    font-size: 0.9rem;
+}
+.cartao-info{
+    display: flex;
+    align-items: center;
+    color: #95999C;
+}
+.cartao-info-tempo::before{
+    font-family: 'icones';
+    content: "\e90c";
+    margin-right: 8px;
+}
+.cartao-info-visualizacao::before{
+    content: "\e90f";
+    margin-right: 8px;
+}
+.cartao-info-money::before{
+    content: "\e905";
+    margin-right: 8px;
+}
+.cartao-botao{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #0480DC;
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    border: none;
+    justify-self: flex-end;
+}
+.cartao-botao:hover{
+    opacity: 50%;
+}
+.cartao-botao a{
+    color:white;
+}
+.cartao-botao-play::before{
+    content: "\e90b";
+    font-size: 24px;
+}
+.cartao-botao-compra::before{
+    content: "\e901";
+    font-size: 24px;
+}
+.cartao-botao-destaque{
+    grid-column: span 2;
+    width: 100%;
+
+}
+.cartao-botao-destaque::before{
+    margin-right: 8px;
+}
+.botao-git{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(226, 226, 226);
+    border-radius: 10px;
+    font-size: 1.2em;
+    
+}
+.botao-git a{
+    color: black;
+}
+.download{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(226, 226, 226);
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 10px;
+}
+.download li{
+    list-style: none;
+}
+.download a{
+    color: black;
+}
+.cartao-diferente{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.cartao-titulo-destaque{
+    font-size: 1.6em;
+}
+.cartao-conteudo-video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+.sessao{
+    display: grid;
+    gap: 16px;  
+}
