@@ -150,6 +150,7 @@ body{
     align-items: center;
     justify-items: center;
     flex-direction: column;
+    padding: 0px;
 }
 .cartao-img{
     width: 128px;
@@ -253,12 +254,12 @@ a:hover{
     color: black;
 }
 .download{ 
-    width: 382px;
+    width: 100%;
     height: 50px;
     background-color: rgb(226, 226, 226);
-    border-radius: 10px;
     font-size: 1.2em;
     padding: 10px;
+    align-items: flex-end;
 }
 .download li{
     list-style: none;
