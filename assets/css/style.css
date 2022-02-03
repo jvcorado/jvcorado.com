@@ -96,30 +96,7 @@ body{
     padding-left: 24px;
     border-left: 8px solid white;
 }
-.menu-lateral-link::before{
-   
-}
-.menu-lateral-inicio::before{
 
-}
-.menu-lateral-sobre::before{
-  
-}
-.menu-lateral-habilidades::before{
- 
-}
-.menu-lateral-projetos::before{
-
-}
-.menu-lateral-certificados::before{
-    
-}
-.menu-lateral-contato::before{
-  
-}
-.menu-lateral-pinturas::before{
-   
-}
 .principal{
     padding: 24px 16px;
     display: grid;
@@ -153,11 +130,18 @@ body{
     padding: 0px;
     margin: 0;
 }
+.cartao video{
+    max-width:300px;
+    max-height: 315px;
+}
 .cartao-img{
-    width: 128px;
+    width:150px;
     display: flex;
     align-self: center;
-
+}
+.cartao-img-inicio{
+    width: 80%;
+    height:auto; 
 }
 .cartao--destaque{
     margin-bottom: 16px;
