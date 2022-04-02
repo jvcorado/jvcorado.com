@@ -5,6 +5,11 @@
     src: url(../font/icones.ttf);
 }
 
+
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -277,4 +282,8 @@ a:hover{
 .sessao{
     display: grid;
     gap: 16px;  
+}
+
+@media screen {
+    
 }
